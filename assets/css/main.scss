@@ -1,26 +1,21 @@
 ---
 ---
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
- * sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
+/* 1. INJECT VARIABLES INTO THE ENGINE */
+$background-color: #D1D1EB;
+$masthead-background-color: #D1D1EB;
+$masthead-link-color: #1C1C1C;
 
+/* 2. THEME IMPORTS */
 @import
     "vendor/breakpoint/breakpoint",
-
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
     "include/mixins",
     "vendor/susy/susy",
-
     "layout/reset",
     "layout/base",
-
     "include/utilities",
     "layout/tables",
     "layout/buttons",
@@ -29,15 +24,47 @@
     "layout/navigation",
     "layout/footer",
     "syntax",
-
     "layout/forms",
-
     "layout/page",
     "layout/archive",
     "layout/sidebar",
     "layout/json_cv",
-
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* 3. THE NUCLEAR OPTION */
+
+/* Target the header and force it to periwinkle */
+.masthead {
+  background-color: #D1D1EB !important;
+}
+
+/* FORCE every child of the header to be transparent so the periwinkle shows through */
+.masthead *, 
+.masthead__inner-wrap, 
+.masthead__menu, 
+nav.greedy-nav, 
+.greedy-nav, 
+.greedy-nav ul, 
+.greedy-nav a, 
+.greedy-nav button {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure text remains dark and readable */
+.site-title, 
+.masthead__menu-item a, 
+.greedy-nav a, 
+.greedy-nav button {
+  color: #1C1C1C !important;
+}
+
+/* Force the body and all main containers to match */
+html, body, #main, .initial-content, .page__inner-wrap {
+  background-color: #D1D1EB !important;
+}

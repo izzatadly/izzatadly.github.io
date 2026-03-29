@@ -11,6 +11,8 @@ main:
   - title: "CV"
     url: /cv/
   - title: "Research"
-    url: /research/
+    url: /publications/
   - title: "Teaching"
     url: /teaching/
+  - title: "Files"         # This is the new tab
+    url: /files-section/   # This must match the permalink in files.md

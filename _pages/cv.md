@@ -25,5 +25,5 @@ Presentations
 
 Teaching Experience
 ======
-* **Undergraduate Econometric Methods**, University of Nebraska-Lincoln 
+* **Introduction To Econometric Methods**, University of Nebraska-Lincoln 
   * *Fall Semester (Aug 2025 - Dec 2025)*

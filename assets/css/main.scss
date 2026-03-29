@@ -4,6 +4,9 @@
 /* 1. Original Theme Imports (Keep these exactly as they are) */
 @import
     "vendor/breakpoint/breakpoint",
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
     "include/mixins",
     "vendor/susy/susy",
     "layout/reset",
@@ -26,27 +29,25 @@
     "vendor/font-awesome/brands"
 ;
 
-/* 2. OVERRIDE SECTION: This forces your periwinkle color over the imports above */
-
-/* Target the outer bar, the inner wrapper, and the page background */
+/* 1. Force the periwinkle color on ALL header layers and the background */
 html, 
 body, 
 .masthead, 
 .masthead__inner-wrap, 
 .masthead__menu,
+.greedy-nav,
+nav.greedy-nav,
 .page__inner-wrap,
 .initial-content,
 .archive {
   background-color: #D1D1EB !important; 
+  background: #D1D1EB !important;
 }
 
-/* Fix the text colors to be high-contrast dark gray */
-.site-title, 
-.masthead__menu-item a, 
-.author__name, 
-.author__bio,
-p, li, h1, h2, h3 {
-  color: #1C1C1C !important;
+/* 2. Remove any remaining white borders or shadows from the menu */
+.greedy-nav {
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* Remove the "shadow" or border that sometimes appears under the white bar */

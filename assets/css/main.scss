@@ -136,3 +136,8 @@ a, .page__content a {
   padding-top: 1em !important;
   padding-bottom: 1em !important;
 }
+
+/* This kills the Sitemap and the 'Follow' section entirely */
+.page__footer-follow {
+  display: none !important;
+}

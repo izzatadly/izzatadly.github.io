@@ -6,7 +6,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # Changed from "sunrise" to "purple"
+site_theme               : "contrast" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Site Title"
 title_separator          : "-"
 name                     : &name "Izzat Bin Ahmad Adly"

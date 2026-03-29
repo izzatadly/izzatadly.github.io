@@ -1,4 +1,3 @@
----
 layout: archive
 title: "CV"
 permalink: /cv/
@@ -11,43 +10,21 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Ph.D. in Economics**, University of Nebraska-Lincoln (Expected 2026)
+* **M.A. in Economics**, International University of Japan (2023)
+* **B.S. in Economics**, University of Nebraska-Lincoln (2021)
 
-Work experience
+Working Papers
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* *"The Role of Prior Beliefs in Housing Expectations"* (Job Market Paper)
+* *"Inattentive Refinancing Decisions"*
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Presentations
+======
+* **North American Summer Meeting of the Econometric Society** (Expected June 2026)
+* **Canadian Economics Association Meeting, Vancouver** (Expected May 2026)
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-
-Publications
+Teaching Experience
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+* **Undergraduate Econometric Methods**, University of Nebraska-Lincoln 
+  * *Fall Semester (Aug 2025 - Dec 2025)*

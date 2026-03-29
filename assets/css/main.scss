@@ -1,26 +1,16 @@
 ---
 ---
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
-
+/* 1. Original Theme Imports (Keep these exactly as they are) */
 @import
     "vendor/breakpoint/breakpoint",
-   
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-    
     "include/mixins",
     "vendor/susy/susy",
-
     "layout/reset",
     "layout/base",
-
     "include/utilities",
     "layout/tables",
     "layout/buttons",
@@ -29,51 +19,41 @@
     "layout/navigation",
     "layout/footer",
     "syntax",
-
     "layout/forms",
-
     "layout/page",
     "layout/archive",
     "layout/sidebar",
     "layout/json_cv",
-
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-/* --- CUSTOM UNIFIED PERIWINKLE BACKGROUND --- */
 
-/* 1. Apply the new unified color to the main backgrounds */
-html, body, .masthead, .page__inner-wrap {
+/* 2. OVERRIDE SECTION: This forces your periwinkle color over the imports above */
+
+/* Target the outer bar, the inner wrapper, and the page background */
+html, 
+body, 
+.masthead, 
+.masthead__inner-wrap, 
+.masthead__menu,
+.page__inner-wrap,
+.initial-content,
+.archive {
   background-color: #D1D1EB !important; 
 }
 
-/* 2. FIX: Remove the white background from the inner header containers */
-.masthead__inner-wrap, .masthead__menu {
-  background-color: transparent !important;
+/* Fix the text colors to be high-contrast dark gray */
+.site-title, 
+.masthead__menu-item a, 
+.author__name, 
+.author__bio,
+p, li, h1, h2, h3 {
+  color: #1C1C1C !important;
 }
 
-/* 3. Ensure contrast: Change text and links to a dark professional gray */
-.site-title,               
-.masthead__menu-item a,     
-.masthead__menu-item a:visited,
-p,                          
-h1, h2, h3, h4, h5, h6,     
-li,                         
-.author__name, .author__bio {
-  color: #1C1C1C !important;  
-}
-
-/* 4. Secondary text (like dates/locations) */
-.author__urls-wrapper a, .page__meta {
-  color: rgba(28, 28, 28, 0.7) !important;
-}
-
-/* 5. Make links a contrasting academic blue */
-a:not([class]), .author__urls-wrapper a:hover {
-  color: #1A3C6B !important;
-}
-/* Ensure links are a contrasting but readable academic blue */
-a:not([class]), .author__urls-wrapper a:hover {
-  color: #1A3C6B !important;
+/* Remove the "shadow" or border that sometimes appears under the white bar */
+.masthead {
+  border-bottom: none !important;
+  box-shadow: none !important;
 }

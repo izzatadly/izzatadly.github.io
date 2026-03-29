@@ -41,22 +41,31 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-/* --- PERMANENT DARK MODE LOCK --- */
+/* --- TRUE NEUTRAL DARK LOCK --- */
 
-/* 1. Hide the light/dark toggle button from the menu */
-#light-toggle, 
-.navbar-nav .nav-item .light-toggle, 
-.moon, .sun {
+/* 1. Reset everything to neutral dark (no brown/sepia) */
+html, body, .masthead, .sidebar, .page__footer, .page__inner-wrap, .archive {
+  background-color: #121212 !important; /* Deep neutral charcoal */
+  color: #e0e0e0 !important;            /* Clean off-white text */
+}
+
+/* 2. Remove the "Sunrise" tint from lines and borders */
+hr, .sidebar, .masthead {
+  border-color: #2c2c2c !important;
+}
+
+/* 3. Force sidebar text and site title to be clean white */
+.sidebar, .masthead__menu-item a, .site-title, .nav__items a {
+  color: #ffffff !important;
+}
+
+/* 4. Hide the toggle button (Moon/Sun) */
+#light-toggle, .navbar-nav .nav-item .light-toggle, .moon, .sun {
   display: none !important;
 }
 
-/* 2. Force the site to use the dark theme variables by default */
-/* (This works if your theme uses the 'dark' class on the body) */
-body {
-  background-color: #1c1c1c !important; /* Your current dark gray */
-  color: #eeeeee !important;            /* Light text */
-}
-
-.masthead, .sidebar, .page__footer {
-  background-color: #1c1c1c !important;
+/* 5. Make links a sharp, professional blue/lavender */
+a, .page__content a {
+  color: #bb86fc !important;
+  text-decoration: none;
 }

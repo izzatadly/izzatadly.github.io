@@ -68,3 +68,30 @@ nav.greedy-nav,
 html, body, #main, .initial-content, .page__inner-wrap {
   background-color: #D1D1EB !important;
 }
+
+/* 4. FORCE ALL TEXT TO BLACK */
+
+/* Target paragraphs, headings, lists, and sidebar information */
+body, p, h1, h2, h3, h4, h5, h6, ul, li, span, 
+.author__name, .author__bio, .page__meta, 
+.archive__item-title, .archive__item-excerpt, 
+.page__title, .page__content {
+  color: #000000 !important;
+}
+
+/* Sidebar links and icons */
+.author__urls-wrapper a, 
+.author__urls-wrapper i {
+  color: #000000 !important;
+}
+
+/* Main body links (Underlined so they still look clickable since they are black) */
+a, .page__content a {
+  color: #000000 !important;
+  text-decoration: underline;
+}
+
+/* Keep header links clean without underlines */
+.masthead__menu-item a, .site-title {
+  text-decoration: none;
+}

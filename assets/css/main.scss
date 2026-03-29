@@ -43,33 +43,36 @@
 ;
 /* --- CUSTOM UNIFIED PERIWINKLE BACKGROUND --- */
 
-/* * Apply the new unified color (#D1D1EB) to everything:
- * - HTML base (body)
- * - Masthead/Header (navigation bar)
- * - Main inner content wrapping
- */
+/* 1. Apply the new unified color to the main backgrounds */
 html, body, .masthead, .page__inner-wrap {
-  background-color: #D1D1EB !important; /* Unified Background Color */
+  background-color: #D1D1EB !important; 
 }
 
-/* * Ensure contrast: Change all text and links to a dark professional 
- * gray so they are visible on the new light background.
- */
-.site-title,               /* Your Name on Top Left */
-.masthead__menu-item a,     /* Top Navigation Links (CV, Research, etc.) */
+/* 2. FIX: Remove the white background from the inner header containers */
+.masthead__inner-wrap, .masthead__menu {
+  background-color: transparent !important;
+}
+
+/* 3. Ensure contrast: Change text and links to a dark professional gray */
+.site-title,               
+.masthead__menu-item a,     
 .masthead__menu-item a:visited,
-p,                          /* Paragraph Text */
-h1, h2, h3, h4, h5, h6,     /* All Headings */
-li,                         /* List Items */
-.author__name, .author__bio /* Sidebar Name & Bio */ {
-  color: #1C1C1C !important;  /* Dark Contrast Text */
+p,                          
+h1, h2, h3, h4, h5, h6,     
+li,                         
+.author__name, .author__bio {
+  color: #1C1C1C !important;  
 }
 
-/* Ensure secondary text (like interests/education dates) is slightly faded dark */
+/* 4. Secondary text (like dates/locations) */
 .author__urls-wrapper a, .page__meta {
   color: rgba(28, 28, 28, 0.7) !important;
 }
 
+/* 5. Make links a contrasting academic blue */
+a:not([class]), .author__urls-wrapper a:hover {
+  color: #1A3C6B !important;
+}
 /* Ensure links are a contrasting but readable academic blue */
 a:not([class]), .author__urls-wrapper a:hover {
   color: #1A3C6B !important;

@@ -122,3 +122,17 @@ a, .page__content a {
 .page__footer-copyright {
   display: none !important;
 }
+
+/* 6. REMOVE SITEMAP AND ALL FOOTER LINKS */
+
+/* Hides the "Follow" section (Sitemap, social icons) and the Copyright section */
+.page__footer-follow, 
+.page__footer-copyright {
+  display: none !important;
+}
+
+/* Reduces the empty space at the bottom so it doesn't look like a huge gap */
+.page__footer {
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+}

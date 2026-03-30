@@ -10,7 +10,12 @@ author_profile: true
 ## Working Papers
 
 **"The Role of Prior Beliefs in Housing Expectations"** (Job Market Paper)  
-/* [[Download PDF]](/files/Prior_Beliefs_Housing.pdf)
+
+
+{% comment %}
+  {%  [[Download PDF]](/files/Prior_Beliefs_Housing.pdf) %}
+  {% endfor %}
+{% endcomment %}
 
 **"Inattentive Refinancing Decisions"** # [[Download PDF]](/files/Refinancing_Decisions.pdf)
 

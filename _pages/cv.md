@@ -9,9 +9,9 @@ author_profile: true
 
 Education
 ======
-* **Ph.D. in Economics**, University of Nebraska-Lincoln (Expected 2026)
-* **M.A. in Economics**, International University of Japan (2023)
-* **B.S. in Economics**, University of Nebraska-Lincoln (2021)
+* **Ph.D. in Economics**, University of Nebraska-Lincoln (Expected May 2028)
+* **M.A. in Economics**, International University of Japan (June 2023)
+* **B.S. in Economics**, University of Nebraska-Lincoln (May 2021)
 
 Working Papers
 ======

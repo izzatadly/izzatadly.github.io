@@ -1,5 +1,5 @@
 ---
-title: "Introduction To Econometrics Method"
+title: "Introduction To Econometrics Method, August 2025"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2025-fall-teaching-1
